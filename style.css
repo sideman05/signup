@@ -9,13 +9,14 @@ body{
 }
 .container{
     width: 80%;
-    height: 68%;
+    height: auto;
     background-color: #ffff;
     box-shadow: 5px 10px 10px #ccc;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
     border-radius: .7rem;
+    padding: 2rem;
 }
 .container .heading{
     text-align: center;
@@ -25,7 +26,7 @@ body{
 .container .heading h2{
     color: rgb(23, 23, 204);
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 2rem;
     /* text-decoration: underline; */
 
 }
@@ -35,7 +36,8 @@ input[type="text"]{
     padding: .7rem;
     margin-bottom: 0;
     border-radius: .5rem;
-    border: 2px solid rgb(39, 150, 39);
+    transition: border-color .5s ease;
+    border: 2px solid #ccc;
 }
 input[type="text"]::placeholder{
     font-weight: 700;
@@ -51,8 +53,10 @@ input[type="email"]{
     margin-top: 0;
     padding: .7rem;
     margin-bottom: 0;
-    border: 2px solid rgb(39, 150, 39);
+    border: 2px solid #ccc;
     border-radius: .5rem;
+    transition: border-color .5s ease;
+
 }
 input[type="email"]::placeholder{
     font-weight: 700;
@@ -63,9 +67,19 @@ input[type="password"]{
     margin-top: 0;
     padding: .7rem;
     margin-bottom: 0;
-    border: 2px solid rgb(39, 150, 39);
+    border: 2px solid #ccc;
     border-radius: .5rem;
+    transition: border-color .5s ease;
 }
+input[type="password"]:focus,
+input[type="text"]:focus, 
+input[type="email"]:focus{
+    border-color: blue;
+    outline: none;
+}
+/* input[type="password"]:focus{
+    border-color: rgb(3, 3, 201);
+} */
 input[type="password"]::placeholder{
     font-weight: 700;
     padding-left: .2rem;
@@ -80,6 +94,7 @@ input[type="password"]::placeholder{
     background-color: rgb(39, 150, 39);
     padding: 1rem;
     margin: .5rem;
+    margin-top: 0;
     border-radius: .5rem;
     color: white;
     font-size: 1rem;
@@ -95,12 +110,26 @@ input[type="password"]::placeholder{
     /* text-align: center; */
     padding: 1rem;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 input[type="checkbox"]{
     padding: 1rem;
-    margin-left: 1rem;
+    margin-left: rem;
 }
 input[type="checkbox"]:checked{
     background-color: red;
+}
+.container .all p{
+    text-align: center;
+    font-size: 1.2rem;
+    /* margin: 2rem; */
+    padding:.5rem;
+}
+.container a{
+    text-decoration: none;
+    color: blue;
+    transition: .5s ease;
+}
+.container a:hover{
+    color: rgb(20, 20, 128);
 }
