@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h2>CREATE ACCOUNT</h2></div>
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="username" placeholder="Write username" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" class="email" placeholder="Enter Your Email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" class="password" placeholder="Create a new Password" required>
+            <label for="password">Confirm Password</label>
+            <input type="password" name="password" class="password" placeholder="Confirm your Password" required>
+            <p>Accepts terms and condition <input type="checkbox" name="accept" class="checkbox" required></p>
+            <button type="submit" onclick="submitted()">Sign</button>
+        </form>
+    </div>
+    <script>
+        function submitted(){
+            alert('you have successfull created an account');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: #eeee;  
+}
+.container{
+    width: 80%;
+    height: 68%;
+    background-color: #ffff;
+    box-shadow: 5px 10px 10px #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    border-radius: .7rem;
+}
+.container .heading{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+.container .heading h2{
+    color: rgb(23, 23, 204);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    /* text-decoration: underline; */
+
+}
+input[type="text"]{
+    margin: .8rem;
+    margin-top: 0;
+    padding: .7rem;
+    margin-bottom: 0;
+    border-radius: .5rem;
+    border: 2px solid rgb(39, 150, 39);
+}
+input[type="text"]::placeholder{
+    font-weight: 700;
+    padding-left: .2rem;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+input[type="email"]{
+    margin: .8rem;
+    margin-top: 0;
+    padding: .7rem;
+    margin-bottom: 0;
+    border: 2px solid rgb(39, 150, 39);
+    border-radius: .5rem;
+}
+input[type="email"]::placeholder{
+    font-weight: 700;
+    padding-left: .2rem;
+}
+input[type="password"]{
+    margin: .8rem;
+    margin-top: 0;
+    padding: .7rem;
+    margin-bottom: 0;
+    border: 2px solid rgb(39, 150, 39);
+    border-radius: .5rem;
+}
+input[type="password"]::placeholder{
+    font-weight: 700;
+    padding-left: .2rem;
+}
+.container form label{
+    font-size: 1.2rem;
+    margin-left: .8rem;
+    font-weight: 700;
+}
+.container form button{
+    border: none;
+    background-color: rgb(39, 150, 39);
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.container form button:hover{
+    background-color: rgb(5, 1, 255);
+}
+.container form p{
+    font-size: 1.1rem;
+    /* text-align: center; */
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+input[type="checkbox"]{
+    padding: 1rem;
+    margin-left: 1rem;
+}
+input[type="checkbox"]:checked{
+    background-color: red;
+}
